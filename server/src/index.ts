@@ -3,6 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import connectDB from './config/db';
+import User from './models/User';
 import authRoutes from './routes/auth';
 import patientRoutes from './routes/patients';
 import appointmentRoutes from './routes/appointments';
@@ -37,7 +38,20 @@ app.use((_req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
 
-connectDB().then(() => {
+const seedIfEmpty = async () => {
+  const count = await User.countDocuments();
+  if (count === 0) {
+    await User.create([
+      { name: 'Admin User', email: 'admin@clinicflow.com', password: 'admin123', role: 'admin' },
+      { name: 'Dr. Sarah Chen', email: 'sarah@clinicflow.com', password: 'doctor123', role: 'doctor' },
+      { name: 'Mike Johnson', email: 'mike@clinicflow.com', password: 'reception123', role: 'receptionist' },
+    ]);
+    console.log('Seed data created for empty database');
+  }
+};
+
+connectDB().then(async () => {
+  await seedIfEmpty();
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
