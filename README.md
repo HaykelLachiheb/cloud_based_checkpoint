@@ -1,5 +1,7 @@
 # ClinicFlow — Cloud-Based Clinic Management System
 
+**Live Demo:** [https://clinicflow-rwjx.onrender.com](https://clinicflow-rwjx.onrender.com)
+
 A modern, cloud-native clinic management system for small healthcare facilities. Built with the MERN stack and deployed on Render.
 
 ## Features
@@ -50,6 +52,14 @@ The server runs on `http://localhost:5000` and client on `http://localhost:3000`
 ```bash
 docker compose up -d
 ```
+
+## Test Credentials
+
+| Role | Email | Password |
+|---|---|---|
+| Admin | admin@clinicflow.com | admin123 |
+| Doctor | sarah@clinicflow.com | doctor123 |
+| Receptionist | mike@clinicflow.com | reception123 |
 
 ## Seed Data
 

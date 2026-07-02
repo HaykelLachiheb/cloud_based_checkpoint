@@ -231,7 +231,7 @@ To deploy ClinicFlow to Render:
 
 4. **Deploy**:
    - Click "Apply" — Render builds and deploys automatically
-   - The app will be available at `https://clinicflow.onrender.com`
+   - The app will be available at `https://clinicflow-rwjx.onrender.com`
 
 Alternatively, deploy with Docker:
 ```bash
