@@ -322,22 +322,4 @@ The project successfully achieves its objectives:
 - **Cloud-native deployment**: Fully containerized and deployable to multiple cloud platforms.
 - **Original contribution**: Addresses a specific gap in affordable clinic management for small facilities.
 
----
-
-## References
-
-1. World Health Organization. (2023). "Global Strategy on Digital Health 2020–2025." WHO Document Production Services, Geneva.
-
-2. BMC Medical Informatics and Decision Making. (2022). "Systematic Review of Open-Source Electronic Health Record Systems." 22(1), 1-15.
-
-3. ISO/TR 14639-2:2014. "Health Informatics — Capacity-Based eHealth Architecture Roadmap."
-
-4. Health Level Seven International. (2023). "HL7 FHIR Release 4." HL7 International.
-
-5. JMIR Medical Informatics. (2024). "Barriers to EHR Adoption in Small Primary Care Practices." 12(2), e45678.
-
-6. U.S. Department of Health and Human Services. (2013). "HIPAA Security Rule: 45 CFR § 164.312."
-
----
-
 *Report prepared for the Cloud-Based Checkpoint project assessment.*
